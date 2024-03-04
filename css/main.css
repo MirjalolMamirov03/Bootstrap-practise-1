@@ -1,0 +1,86 @@
+@import url(./fonts.css);
+
+:root {
+    --orange: #E28625;
+    --light-green: #006971;
+    --green: #004140;
+    --fm_1: "LexendDeca";
+    --fm_2: "BigShouldersDispley";
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.card {
+    border: none;
+    padding: 48px 47px;
+}
+
+.col-12:nth-child(1) .card {
+    background-color: var(--orange);
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.col-12:nth-child(2) .card {
+    background-color: var(--light-green);
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.col-12:nth-child(3) .card {
+    background-color: var(--green);
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+
+.card-title {
+    color: #F2F2F2;
+    font-family: var(--fm_2);
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    max-width: 212px;
+    width: 100%;
+    color: #FFF;
+    font-family: var(--fm_1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+    margin-bottom: 80px;
+}
+
+.card-btn {
+    border-radius: 25px !important;
+    background-color: #F2F2F2 !important;
+    padding: 11px 30px !important;
+    border: 2px solid #FFF !important;
+}
+
+.col-12:nth-child(1) .card-btn {
+    color: var(--orange);
+}
+
+.col-12:nth-child(2) .card-btn {
+    color: var(--light-green);
+}
+
+.col-12:nth-child(3) .card-btn {
+    color: var(--green);
+}
+
+.card-btn:active {
+    border: 2px solid #FFF !important;
+    color: #FFF !important;
+    background-color: transparent !important;
+}
